@@ -127,15 +127,19 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
-    color: white;
-    padding-top: 80px;
+    padding: 0 1rem;
+    background: linear-gradient(rgba(116, 159, 201, 0.3), rgba(124, 151, 179, 0.3)), url('./data/landing_page.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero p{
+    color: var(--background-color);
 }
 
 .hero-content {
@@ -147,9 +151,10 @@ body {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
+    color: var(--background-color);
 }
 
-.hero .subtitle {
+.hero .subtitle {   
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
